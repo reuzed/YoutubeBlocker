@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.user.websiteblocker</string>
+    
+    <key>ProgramArguments</key>
+    <array>
+        <string>__PYTHON_PATH__</string>
+        <string>/usr/local/bin/blocker.py</string>
+        <string>auto</string>
+    </array>
+    
+    <!-- Run every 5 minutes -->
+    <key>StartInterval</key>
+    <integer>300</integer>
+    
+    <!-- Also run at load -->
+    <key>RunAtLoad</key>
+    <true/>
+    
+    <!-- Run as root to modify /etc/hosts -->
+    <key>UserName</key>
+    <string>root</string>
+    
+    <key>StandardOutPath</key>
+    <string>/tmp/websiteblocker.log</string>
+    
+    <key>StandardErrorPath</key>
+    <string>/tmp/websiteblocker.err</string>
+</dict>
+</plist>
