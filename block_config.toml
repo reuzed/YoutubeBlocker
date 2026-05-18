@@ -21,17 +21,17 @@ block_days = [
 # List of times that should be blocked
 
 [[block_schedule]]
-start = 9
+start = 8
 end = 12
 
 [[block_schedule]]
 start = 13
-end = 18
+end = 17
 
 [[block_schedule]]
-start = 23
+start = 18
 end = 24
 
 [[block_schedule]]
 start = 0
-end = 5
+end = 7
