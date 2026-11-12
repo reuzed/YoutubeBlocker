@@ -25,9 +25,9 @@
     <string>root</string>
     
     <key>StandardOutPath</key>
-    <string>/tmp/websiteblocker.log</string>
+    <string>__LOG_PATH__</string>
     
     <key>StandardErrorPath</key>
-    <string>/tmp/websiteblocker.err</string>
+    <string>__ERR_PATH__</string>
 </dict>
 </plist>
