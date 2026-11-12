@@ -1,0 +1,42 @@
+# ytblock config. After editing, re-run ./install.sh to copy it into place
+# (the installed copy is root-owned on purpose -- changing the rules should take
+# a deliberate step). The daemon picks up the new copy within ~20 seconds.
+
+blocked_websites = [
+    "youtube.com",
+    "www.youtube.com",
+    "m.youtube.com",
+    "youtu.be",
+    "youtube-nocookie.com",
+    "www.youtube-nocookie.com",
+]
+
+# Weekdays: one session per window, at most this long. Sessions also end when
+# their window closes. Starting a session uses up the window (no pausing).
+session_minutes = 30
+
+# Weekend days (Monday = 0 ... Sunday = 6): unblock any time, as often as you
+# like, this many minutes per session.
+weekend_days = [5, 6]
+weekend_session_minutes = 60
+
+# Weekday unblock windows, 24h "HH:MM". Can't cross midnight ("24:00" is fine).
+[[windows]]
+name = "breakfast"
+start = "08:00"
+end = "11:00"
+
+[[windows]]
+name = "lunch"
+start = "12:00"
+end = "14:00"
+
+[[windows]]
+name = "dinner"
+start = "17:30"
+end = "19:30"
+
+[[windows]]
+name = "evening"
+start = "20:00"
+end = "22:30"
